@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.10
+#!/usr/bin/env python3
 
 sum_list = __import__('5-sum_list').sum_list
 
