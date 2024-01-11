@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.10
 
 sum_mixed_list = __import__('6-sum_mixed_list').sum_mixed_list
 
