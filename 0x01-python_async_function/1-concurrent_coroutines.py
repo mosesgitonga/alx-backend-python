@@ -10,11 +10,10 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     """
     call the wait_random and return random wait time 'n' times
     """
-    i = 0
+
     mylist = []
-    while i < n:
+    for _ in range(n):
         res = await wait_random(max_delay)
         mylist.append(res)
-        i += 1
 
     return mylist
