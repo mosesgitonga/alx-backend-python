@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-import asyncio
-from typing import AsyncGenerator, List
+
+""" Async Comprehensions """
+
+from asyncio import sleep
+from random import uniform
+from typing import List
+
 async_generator = __import__('0-async_generator').async_generator
-"""
-async coprehension
-"""
 
 
 async def async_comprehension() -> List[float]:
-    """
-    corutine for async comprehension
-    """
-    res = [i for i in async_generator()]
-    return res
+    """ Async Comprehensions  """
+    a = [i async for i in async_generator()]
+    return a
