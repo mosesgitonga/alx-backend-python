@@ -5,6 +5,7 @@ parameterize a unit test
 import unittest
 from parameterized import parameterized
 from typing import Mapping, Sequence, Any
+from utils import access_nested_map
 
 
 def access_nested_map(nested_map: Mapping, path: Sequence) -> Any:
