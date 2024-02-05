@@ -65,7 +65,11 @@ class TestGetJson(unittest.TestCase):
             self.assertEqual(result, data['test_payload'])
             mock_requests_get.reset_mock()
 
+
 class TestMemoize(unittest.TestCase):
+    """
+    test utils.memoize
+    """
     def test_memoize(self):
         class TestClass:
             @patch('utils.memoize')
@@ -75,8 +79,10 @@ class TestMemoize(unittest.TestCase):
             @memoize
             def a_property(self):
                 return self.a_method()
-        class TestClass:
 
+        class TestClass:
+            """tests class for testing with moize
+            """
             def a_method(self):
                 return 42
 
